@@ -5,14 +5,15 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+
 import os
 import sys
-sys.path.insert(0, os.path.abspath('./'))
+sys.path.insert(0, os.path.abspath('../../mock_modules/'))
 
 project = 'memockpackage'
-copyright = '2023, Gang'
-author = 'Gang'
-release = 'sphinx-git'
+copyright = '2023, L'
+author = 'L'
+release = '0.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -21,23 +22,25 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
-    'nbsphinx',
-    'nbsphinx_link',
     'sphinx_rtd_theme',
     'recommonmark',
-    'sphinx.ext.mathjax',
-    # 'sphinx_math_dollar',
-    # 'sphinx_copybutton',
-    'sphinx.ext.todo',
 ]
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = []
 
-language = 'English'
+
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
+# added to support markdown
+source_suffix={
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
+
+html_theme = 'sphinx_rtd_theme'
