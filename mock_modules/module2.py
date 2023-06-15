@@ -1,4 +1,6 @@
-import module1 as m1
+from mock_modules import module1 as m1
+# the following will cause import error in test_module2
+# import module1 as m1
 def repeat_array_four_times(arr):
     """repeat_array_four_times return an array that repeats the input arr for four times
 
