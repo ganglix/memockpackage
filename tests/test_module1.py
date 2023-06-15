@@ -1,6 +1,7 @@
 
-import sys
-sys.path.insert(0, './')
+# import sys
+# sys.path.insert(0, './')
+# works in pycharm without adding path
 
 import numpy as np
 import unittest

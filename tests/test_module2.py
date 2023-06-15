@@ -1,9 +1,8 @@
 
-import sys
-sys.path.insert(0, './')
+# import sys
+# sys.path.insert(0, './')
 import numpy as np
 import unittest
-from unittest.mock import patch
 from mock_modules.module2 import repeat_array_four_times
 
 class Module2TestCase(unittest.TestCase):
