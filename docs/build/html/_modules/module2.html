@@ -157,11 +157,9 @@
            <div itemprop="articleBody">
             
   <h1>Source code for module2</h1><div class="highlight"><pre>
-<span></span><span class="c1"># import sys</span>
-<span class="c1"># sys.path.insert(0, &#39;./&#39;)</span>
-<span class="c1"># from mock_modules import module1 as m1</span>
-
-<span class="kn">import</span> <span class="nn">module1</span> <span class="k">as</span> <span class="nn">m1</span>
+<span></span><span class="kn">from</span> <span class="nn">mock_modules</span> <span class="kn">import</span> <span class="n">module1</span> <span class="k">as</span> <span class="n">m1</span>
+<span class="c1"># the following will cause import error in test_module2</span>
+<span class="c1"># import module1 as m1</span>
 <div class="viewcode-block" id="repeat_array_four_times"><a class="viewcode-back" href="../module2.html#module2.repeat_array_four_times">[docs]</a><span class="k">def</span> <span class="nf">repeat_array_four_times</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;repeat_array_four_times return an array that repeats the input arr for four times</span>
 
