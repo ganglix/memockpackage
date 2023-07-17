@@ -1,7 +1,8 @@
 
-# import sys
-# sys.path.insert(0, './')
-# works in pycharm without adding path
+import sys
+import os
+parent_dir = os.path.abspath(os.getcwd())
+sys.path.append(parent_dir)
 
 import numpy as np
 import unittest

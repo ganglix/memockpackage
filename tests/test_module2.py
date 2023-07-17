@@ -1,6 +1,9 @@
 
-# import sys
-# sys.path.insert(0, './')
+import sys
+import os
+parent_dir = os.path.abspath(os.getcwd())
+sys.path.append(parent_dir)
+
 import numpy as np
 import unittest
 from mock_modules.module2 import repeat_array_four_times
