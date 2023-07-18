@@ -17,21 +17,15 @@ As memockpackage is a mock package, it does not provide any usable functionality
 Directory Structure
 The memockpackage directory has the following structure:
 
-.
-├── LICENSE
-├── README.md
-├── docs
-│   ├── Makefile
-│   ├── build
-│   ├── make.bat
-│   └── source
-├── mock_modules
-│   ├── __init__.py
-│   ├── module1.py
-│   └── module2.py
-├── requirements.txt
-├── requirements_dev.txt
-├── setup.py
-└── tests
-    ├── test_module1.py
-    └── test_module2.py
+memockpackage/
+ ├── mock_modules/
+ │   ├── __init__.py
+ │   ├── module1.py
+ │   └── module2.py
+ ├── tests/
+ │   ├── test_module1.py
+ │   └── test_module2.py
+ ├── docs/
+ ├── README.md
+ ├── LICENSE
+ └── pyproject.toml
