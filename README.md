@@ -30,3 +30,5 @@ memockpackage/
  ├── LICENSE
  └── pyproject.toml
  ```
+
+ TODO: add import to __init__.py so all modules and functions are imported 
