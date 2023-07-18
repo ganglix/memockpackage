@@ -1,16 +1,17 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "mock_modules"
 version = "0.0.1"
+description = "A small example package"
+readme = "README.md"
+requires-python = "=>3.9"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
-description = "A small example package"
-readme = "README.md"
-requires-python = "==3.9"
+
 classifiers = [
     'Development Status :: 3 - Alpha',
     "Programming Language :: Python :: 3.9",
@@ -18,5 +19,10 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+dependencies = [
+  "numpy>=1.25.1",
+]
+
 [project.urls]
 "Homepage" = "https://github.com/ganglix/memockpackage"
+"Documentation" = "https://github.com/ganglix/memockpackage"
