@@ -1,4 +1,4 @@
-import module1 as m1
+from . import module1 as m1
 # the following will cause import error in test_module2
 # import module1 as m1
 def repeat_array_four_times(arr):
