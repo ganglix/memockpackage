@@ -1,22 +1,22 @@
-# memockpackage
+# mock-modules
 
-`memockpackage` is a Python package designed for demonstration purposes to showcase a directory structure and packaging approach. It provides a collection of mock modules with no functional implementation.
+`mock-modules` is a Python package designed for demonstration purposes to showcase a directory structure and packaging approach. It provides a collection of mock modules with no functional implementation.
 
 Please note that this package is intended for learning and demonstration purposes only and should not be used in production environments.
 
 ## Installation
 
-You can install `memockpackage` using pip:
+You can install `mock-modules` using pip:
 
-pip install memockpackage
+pip install mock-modules
 
 
 ## Usage
-As memockpackage is a mock package, it does not provide any usable functionality. However, it serves as an example of organizing a Python package structure and can be used as a reference for creating your own packages.
+As mock-modules is a mock package, it does not provide any usable functionality. However, it serves as an example of organizing a Python package structure and can be used as a reference for creating your own packages.
 
 Directory Structure
-The memockpackage directory has the following structure:
-
+The project directory has the following structure:
+```bash
 memockpackage/
  ├── mock_modules/
  │   ├── __init__.py
@@ -29,3 +29,4 @@ memockpackage/
  ├── README.md
  ├── LICENSE
  └── pyproject.toml
+ ```
