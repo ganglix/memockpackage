@@ -62,6 +62,11 @@ with an empty __init__.py, submodules (module1, module2) are not imported when y
 to import module1
 import mock_modules.module1 as m1
 
+Notes on dir():
+To make the dir(package) command show the names of submodules within a package, you need to ensure that the submodules are explicitly imported or included in the package's __init__.py file. Here's how you can achieve this:
+
+Within the __init__.py file, import the submodules using either the import or from ... import ... statement. This step is necessary to ensure the submodules are loaded when the package is imported.
+
 
 
 Notes on development-packaging procedure:
@@ -73,3 +78,5 @@ Notes on development-packaging procedure:
 5 revise
 7 uninstall (optional)
 6 build and publish
+
+

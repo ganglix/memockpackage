@@ -18,8 +18,9 @@
 # res = m1.repeat_array_twice([1])
 # print(res) # [1 1]
 
-import mock_modules.module2 as m2
-res = m2.repeat_array_four_times([1])
-print(res) # [1 1]
+# import mock_modules.module2 as m2
+# res = m2.repeat_array_four_times([1])
+# print(res) # [1 1]
 
-
+# import mock_modules as mm
+# print(dir(mm))
